@@ -1,0 +1,528 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 999;
+}
+
+.logo img {
+    width: 120px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fac031;
+}
+
+.icon i {
+    margin-left: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+    transition: 0.3s;
+}
+
+.icon i:hover {
+    color: #fac031;
+}
+
+/* Home Section */
+#Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.main_text h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.main_text h1 span {
+    color: #fac031;
+    font-family: 'MV Boli', cursive;
+}
+
+.main_image img {
+    width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+#Home p {
+    max-width: 500px;
+    margin-top: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.main_btn {
+    background: #fac031;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.main_btn a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main_btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* About Section */
+.about_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+
+.about_main .image img {
+    width: 500px;
+    border-radius: 15px;
+}
+
+.about_text {
+    max-width: 500px;
+}
+
+.about_text h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.about_text h1 span {
+    color: #fac031;
+    font-family: 'MV Boli', cursive;
+}
+
+.about_text h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about_text p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.about_btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #fac031;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.about_btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Menu Section */
+.menu h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.menu h1 span {
+    color: #fac031;
+    font-family: 'MV Boli', cursive;
+}
+
+.menu_box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 0 50px;
+}
+
+.menu_card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    position: relative;
+}
+
+.menu_card:hover {
+    transform: translateY(-5px);
+}
+
+.menu_image img {
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.menu_image img:hover {
+    transform: scale(1.05);
+}
+
+.small_card {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.small_card:hover {
+    background: #fac031;
+    color: #fff;
+}
+
+.menu_info h2 {
+    color: #333;
+    margin-top: 15px;
+}
+
+.menu_info p {
+    margin: 10px 0;
+    color: #777;
+}
+
+.menu_info h3 {
+    margin: 10px 0;
+    color: #fac031;
+}
+
+.menu_icon {
+    color: #fac031;
+    margin-bottom: 10px;
+}
+
+.menu_btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu_btn:hover {
+    background: #fac031;
+}
+
+/* Gallery Section */
+.gallery h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.gallery h1 span {
+    color: #fac031;
+    font-family: 'MV Boli', cursive;
+}
+
+.Gallery_image_box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 50px;
+}
+
+.gallery_image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.gallery_image img {
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.gallery_image:hover img {
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+.gallery_image h3, .gallery_image p, .gallery_btn {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.gallery_image h3 {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+}
+
+.gallery_image p {
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 200px;
+    font-size: 14px;
+}
+
+.gallery_btn {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fac031;
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: #000;
+    text-decoration: none;
+}
+
+.gallery_image:hover h3,
+.gallery_image:hover p,
+.gallery_image:hover .gallery_btn {
+    opacity: 1;
+}
+
+/* Review Section */
+.review h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.review_box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 0 50px;
+}
+
+.review_card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.review_profile img {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.review_text .name {
+    color: #fac031;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.review_icon {
+    color: #fac031;
+    margin-bottom: 10px;
+}
+
+.review_social i {
+    margin: 0 5px;
+    color: #555;
+    transition: 0.3s;
+}
+
+.review_social i:hover {
+    color: #fac031;
+}
+
+/* Order Section */
+.order_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+
+.order_image img {
+    width: 400px;
+    border-radius: 15px;
+}
+
+form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    width: 400px;
+}
+
+.input {
+    margin-bottom: 15px;
+}
+
+.input p {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.order_btn {
+    display: inline-block;
+    background: #fac031;
+    padding: 12px 30px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.order_btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Team Section */
+.team_box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+
+.profile {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.profile img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.name {
+    color: #fac031;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.bio {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.team_icon i {
+    margin: 0 5px;
+    color: #555;
+    transition: 0.3s;
+}
+
+.team_icon i:hover {
+    color: #fac031;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #ccc;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.footer_tag h2 {
+    color: #fac031;
+    margin-bottom: 10px;
+}
+
+.footer_tag p, .footer_tag i {
+    margin: 5px 0;
+}
+
+.end {
+    color: #fac031;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    .main {
+        flex-direction: column;
+    }
+}
